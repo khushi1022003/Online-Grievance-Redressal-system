@@ -1,0 +1,23 @@
+#user
+CREATE TABLE user (
+   name VARCHAR(255) NOT NULL,
+   email VARCHAR(255) NOT NULL,
+   uname VARCHAR(255) NOT NULL,
+   password VARCHAR(255) DEFAULT NULL,
+   admin INT(11) DEFAULT '0',
+   PRIMARY KEY (uname)
+);
+#post
+ CREATE TABLE post (
+   uid INT(11) NOT NULL AUTO_INCREMENT,
+   title VARCHAR(255) DEFAULT NULL,
+   deptName VARCHAR(255) DEFAULT NULL,
+   facultyName VARCHAR(255) DEFAULT NULL,
+   description VARCHAR(500) DEFAULT NULL,
+   uname VARCHAR(255) DEFAULT NULL,
+   status VARCHAR(50) DEFAULT 'Pending',
+   anonymous INT(11) DEFAULT NULL,
+   PRIMARY KEY (uid),
+   KEY uname (uname),
+   CONSTRAINT post_ibfk_1 FOREIGN KEY (uname) REFERENCES user (uname)
+);
