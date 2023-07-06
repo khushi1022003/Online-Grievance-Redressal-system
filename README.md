@@ -1,13 +1,14 @@
 "# Online-Grievance-Redressal-system" 
 
 Technologies/Software Used:
-Java
-HTML
-CSS
-JAVASCRIPT
-MYSQL
-JDBC
-Apache Netbeans
+1. Java
+2. HTML
+3. CSS
+4. JAVASCRIPT
+5. MYSQL
+6. JDBC
+7. Apache Netbeans
+8. Tomcat Server
 
 #features:
 
